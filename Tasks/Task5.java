@@ -7,7 +7,7 @@ import java.util.Arrays;
 
 public class Task5 {
 
-    //#1
+    //задача #1
     static String encrypt(String decrypt) {
         int[] encrypt = new int[decrypt.length()];
         encrypt[0] = decrypt.charAt(0);
@@ -23,7 +23,7 @@ public class Task5 {
         return decrypt.toString();
     }
 
-    //#2
+    //задача #2
     static boolean canMove(String figure, String start, String end) {
         int xs = start.charAt(0);
         int ys = start.charAt(1);
@@ -46,7 +46,7 @@ public class Task5 {
         return false;
     }
 
-    //#3
+    //задача #3
     static boolean canComplete(String s, String w) {
         int i = 0;
         for (char c : w.toCharArray())
@@ -54,7 +54,7 @@ public class Task5 {
         return s.length() == i;
     }
 
-    //#4
+    //задача #4
     static int sumDigProd(int... num) {
         int result = 0;
         for (int i : num) result += i;
@@ -67,7 +67,7 @@ public class Task5 {
         return result;
     }
 
-    //#5
+    //задача #5
     static String sameVowelGroup(String... s) {
         StringBuilder glasn = new StringBuilder("aeiou");
         StringBuilder word = new StringBuilder(s[0] + " ");
@@ -85,7 +85,7 @@ public class Task5 {
         return word.toString();
     }
 
-    //#6
+    //задача #6
     static Boolean validateCard(long num) {
         StringBuffer sNum = new StringBuffer(String.valueOf(num));
         sNum.deleteCharAt(sNum.length() - 1).reverse();
@@ -104,7 +104,7 @@ public class Task5 {
         return 10 - sum % 10 == num % 10;
     }
 
-    //#7
+    //задача #7
     static String numToEng(int value) {
         String result = "";
         if (!(value > 0 & value < 1000)) return value == 0 ? "zero" : "incorrect value";
@@ -120,7 +120,7 @@ public class Task5 {
         return result;
     }
 
-    //#8
+    //задача #8
     static String getSha256Hash(String line) throws NoSuchAlgorithmException {
         byte[] hash = MessageDigest.getInstance("SHA-256").digest(line.getBytes(StandardCharsets.UTF_8));
         StringBuilder sb = new StringBuilder();
@@ -129,7 +129,7 @@ public class Task5 {
         return sb.toString();
     }
 
-    //#9
+    //задача #9
     static String correctTitle(String s) {
         StringBuilder result = new StringBuilder();
         s = s.replace("-", " - ");
@@ -139,7 +139,7 @@ public class Task5 {
         return result.toString();
     }
 
-    //#10
+    //задача #10
     static String hexLattice(int num) {
         int n = 1, count = 1;
         String res = "";

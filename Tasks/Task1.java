@@ -5,27 +5,27 @@ public class Task1 {
 
     }
 
-    //#1
+    //задача #1
     public static int remainder(int a, int b) {
         return a % b;
     }
 
-    //#2
+    //задача #2
     public static float triArea(int a, int b) {
         return (float) (a * b) / 2;
     }
 
-    //#3
+    //задача #3
     public static int animals(int chickens, int pig, int cow) {
         return chickens * 2 + pig * 4 + cow * 4;
     }
 
-    //#4
+    //задача #4
     public static boolean profitableGamble(float prob, int prize, int pay) {
         return prob * prize > pay;
     }
 
-    //#5
+    //задача #5
     public static String operation(int a, int b,int s) {
         if ((b - a == s) | (a - b == s)) return "substacted";
         if ((b + a == s)) return  "added";
@@ -34,24 +34,24 @@ public class Task1 {
         return "none";
     }
 
-    //#6
+    //задача #6
     public static int ctoa(String s) {
         return s.charAt(0);
     }
 
-    //#7
+    //задача #7
     public static int addUpTo(int a) {
         int s = 0;
         for (int i = 0; i <= a; i++) s += i;
         return (s);
     }
 
-    //#8
+    //задача #8
     public static int nextEdge(int a, int b) {
         return (a + b - 1);
     }
 
-    //#9
+    //задача #9
     public static int sumOfCubes(int... a) {
         int s = 0;
         for (int i : a) {
@@ -60,7 +60,7 @@ public class Task1 {
         return (s);
     }
 
-    //#10
+    //задача #10
     public static boolean abcmath(int a, int b, int c) {
         for (int i = 0; i < b; i++) {
             a += a;

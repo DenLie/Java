@@ -9,7 +9,7 @@ public class Task3 {
 
     }
 
-    //#1
+    //задача #1
     static int solutions(int a, int b, int c) {
         int d = b ^ 2 - 4 * a * c;
         if (d > 0) return 2;
@@ -17,12 +17,12 @@ public class Task3 {
         else return 0;
     }
 
-    //#2
+    //задача #2
     static int findZip(String a) {
         return a.indexOf("zip", a.indexOf("zip") + 1);
     }
 
-    //#3
+    //задача #3
     static boolean checkPerfect(int a) {
         int n = 0;
         for (int i = 1; i < a; i++) {
@@ -32,7 +32,7 @@ public class Task3 {
         return false;
     }
 
-    //#4
+    //задача #4
     static String flipEndChars(String a) {
 
         if (a.length() < 2) return "Incompatible";
@@ -41,12 +41,12 @@ public class Task3 {
 
     }
 
-    //#5
+    //задача #5
     static boolean isValidHexCode(String a) {
         return a.matches("(\\#)[a-fA-F0-9]{6}");
     }
 
-    //#6
+    //задача #6
     static boolean same(Integer[] arr1, Integer[] arr2) {
         Set<Integer> set1 = new LinkedHashSet<>(Arrays.asList(arr1));
         Set<Integer> set2 = new LinkedHashSet<>(Arrays.asList(arr2));
@@ -54,7 +54,7 @@ public class Task3 {
         return false;
     }
 
-    //#7
+    //задача #7
     public static boolean isKaprekar(int a) {
         a = a * a;
         int a3 = a;
@@ -77,7 +77,7 @@ public class Task3 {
         return (a3 == cl + cr);
     }
 
-    //#8
+    //задача #8
     static String longestZero(String s) {
         int max = 0;
         int maxi = 0;
@@ -94,7 +94,7 @@ public class Task3 {
         return res;
     }
 
-    //#9
+    //задача #9
     public static int nextPrime(int a) {
         ;
         while (!IsPrime(a)) a++;
@@ -110,7 +110,7 @@ public class Task3 {
         return true;
     }
 
-    //#10
+    //задача #10
     static boolean rightTriangle(int a, int b, int c) {
         return triangle(a, b, c) | triangle(b, c, a) | triangle(c, a, b);
     }

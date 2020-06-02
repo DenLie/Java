@@ -7,7 +7,7 @@ public class Task2 {
 
     }
 
-    //#1
+    //задача #1
     public static String repeat(String s, int a) {
         String k = "";
         for (int i = 0; i < s.length(); i++)
@@ -15,7 +15,7 @@ public class Task2 {
         return k;
     }
 
-    //#2
+    //задача #2
     public static int differenceMaxMin(int... a) {
         int max = a[1];
         int min = a[1];
@@ -26,7 +26,7 @@ public class Task2 {
         return (max - min);
     }
 
-    //#3
+    //задача #3
     public static boolean isAvgWhole(int... a) {
         int k = 0;
         int sum = 0;
@@ -37,7 +37,7 @@ public class Task2 {
         return (sum % k) == 0;
     }
 
-    //#4
+    //задача #4
     public static String cumulativeSum(int... a) {
         int[] res = new int[a.length];
         int i = 0;
@@ -49,13 +49,13 @@ public class Task2 {
         return Arrays.toString(res);
     }
 
-    //#5
+    //задача #5
     public static String getDecimalPlaces(String a) {
         int b = a.indexOf(".");
         return b == -1 ? "0" : String.valueOf(a.substring(b + 1).length());
     }
 
-    //#6
+    //задача #6
     public static int Fibonacci(int a) {
         int a1 = 1;
         int a2 = 1;
@@ -69,7 +69,7 @@ public class Task2 {
         return a1;
     }
 
-    //#7
+    //задача #7
     public static boolean isValid(String a) {
         if (a.length() != 5) return false;
         for (char c : a.toCharArray()) {
@@ -78,12 +78,12 @@ public class Task2 {
         return true;
     }
 
-    //#8
+    //задача #8
     public static boolean isStrangePair(String a, String b) {
         return (a.charAt(0) == b.charAt(b.length() - 1)) & (a.charAt(a.length() - 1) == b.charAt(0));
     }
 
-    //#9
+    //задача #9
     public static boolean isPrefix(String a, String b) {
         return a.startsWith(b.substring(0, b.length() - 1));
     }
@@ -92,7 +92,7 @@ public class Task2 {
         return a.endsWith(b.substring(1));
     }
 
-    //#10
+    //задача #10
     public static int boxSeq(int a) {
         int sum = 0;
         for (int i = 1; i <= a; i++) {

@@ -5,7 +5,7 @@ public class Task4 {
 
     }
 
-    //#1
+    //задача #1
     static String textEdit(int n, int k, String s) {
         StringBuilder resultText = new StringBuilder();
         int lenght = 0;
@@ -31,7 +31,7 @@ public class Task4 {
         return resultText.toString();
     }
 
-    //#2
+    //задача #2
     static String split(String s) {
         int l = 0;
         String result = "\"";
@@ -42,7 +42,7 @@ public class Task4 {
         return result.substring(0, result.length() - 2);
     }
 
-    //#3
+    //задача #3
     static String toCamelCase(String snake) {
         while (snake.contains("_"))
             snake = snake.substring(0, snake.indexOf("_")) +
@@ -58,12 +58,12 @@ public class Task4 {
         return result;
     }
 
-    //#4
+    //задача #4
     static String overTime(int start, int end, double pay, double overtime) {
         return String.format("$" + "%.2f", end <= 17 ? (end - start) * pay : (end - start) * pay + (end - 17) * overtime);
     }
 
-    //#5
+    //задача #5
     static String BMI(String weight, String height) {
         double h = Double.parseDouble(height.substring(0, height.indexOf(" ")));
         double w = Double.parseDouble(weight.substring(0, weight.indexOf(" ")));
@@ -75,7 +75,7 @@ public class Task4 {
         return bmi == 0 ? "Incorrect line" : (bmi <= 18.4 ? bmi + " Недостаточный вес" : (bmi >= 25 ? bmi + " Избыточный вес" : bmi + " Нормальный вес"));
     }
 
-    //#6
+    //задача #6
     static int bugger(int a) {
         if (a < 10) return 0;
         int ch = 1;
@@ -86,7 +86,7 @@ public class Task4 {
         return 1 + bugger(ch);
     }
 
-    //#7
+    //задача #7
     static String toStarShorthand(String s) {
         s += " ";
         int count = 1;
@@ -101,7 +101,7 @@ public class Task4 {
         return result;
     }
 
-    //#8
+    //задача #8
     static boolean doesRhyme(String a, String b) {
         String la = a.split(" ")[a.split(" ").length - 1].replaceAll("[!.?]", "");
         System.out.println(la);
@@ -109,7 +109,7 @@ public class Task4 {
         return lb.toLowerCase().endsWith(la.toLowerCase());
     }
 
-    //#9
+    //задача #9
     static boolean trouble(long a, long b) {
         int count = 1;
         String first = String.valueOf(a);
@@ -122,7 +122,7 @@ public class Task4 {
         return false;
     }
 
-    //#10
+    //задача #10
     static int countUniqueBooks(String stringSequence, char bookEnd) {
         int i = 0;
         int k = 0;
